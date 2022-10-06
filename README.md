@@ -1,1 +1,2 @@
-# JavaScript-Training-Centre
+# JavaScript Training Centre
+
