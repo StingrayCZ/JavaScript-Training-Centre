@@ -5,6 +5,7 @@
 * Instalation Bracket IDE
 * Extension Manager (správce doplňků)
 * HTML Skeleton a Emmet
+* https://rosti.cz/
 
 ## Lesson 2 (18.10.2022)
 
@@ -85,6 +86,7 @@ confirm("Jsi plnolety?");
 ```
 
 ```html
+// prompt = výzva
 var age = prompt("Kolik je ti let")
 console.log("age + 5: " + age + 5);     // spojeni dvou stringu
 console.log("age +++ 5: " + age +++ 5);     // soucet
@@ -133,4 +135,113 @@ console.log(result);
 
 var resultConfirm = confirm("Jsi plnolety?");  // dotaz na ANO/NE
 console.log(resultConfirm)
+```
+
+```html
+/*****************************
+ * * Zjisteni datove typu
+ */
+var name = "David";
+var age = 15;
+
+console.log(typeof(name));
+console.log(typeof(age));
+console.log(typeof("20"));
+console.log(typeof(20));
+console.log(typeof(true)); //boolean
+```
+
+## Lesson 3 (25.10.2022)
+
+* Další operátory v JavaScriptu </p>
+* Podmínky if a else v JavaScriptu </p>
+* Načtení hodnoty od uživatele a vyhodnocení pomocí podmínky v JavaScriptu </p>
+
+```html
+// increment
+var x = 1;
+x = x + 1;
+x += 1;
+x++;
+console.log(x);  // 4
+x += 1;
+console.log(x);  // 5
+
+// decrement
+x -= 2;
+console.log(x);  // 3
+x--;
+console.log(x);  // 2
+```
+
+```html
+// True&False
+if (3 > 0){
+    // podminka je true = pravda
+    console.log("Je to pravda");
+} else {
+    // podminka je false = nepravda
+    console.log("neni to pravda");
+}
+```
+
+```html
+var ageDavid = 15;
+var ageJana = 20;
+
+if (ageDavid > ageJana){
+    // podminka je true = pravda
+    console.log("Je to pravda");
+} else {
+    // podminka je false = nepravda
+    console.log("neni to pravda");
+}
+```
+
+```html
+var age = prompt("Kolik je ti let?");
+
+if (age >= 18) {
+    console.log("Jsi plnolety");
+}
+else {
+    console.log("Nejsi plnolety");
+}
+```
+
+Lesson 4 (29.10.2022)
+
+* If, else, else if v JavaScriptu </p>
+* Převod datových typů a jednoduchá kalkulačka v JavaScriptu </p>
+
+
+```html
+var ageDavid = 20;
+var ageJana = 220;
+
+if (ageDavid > ageJana){
+    // podminka je true = pravda
+    console.log("Jana je mladsi");
+} else if (ageDavid < ageJana){
+    // podminka je true = pravda
+    console.log("David je mladsi");
+}else {
+    // podminka je false = nepravda
+    console.log("Jsou stejne stari");
+}
+```
+
+```html
+// zadani cisla a prevod stringu na cislo
+var firstNumer = Number(prompt("Zadej prvni cislo"));
+var secondNumer = Number(prompt("Zadej druhe cislo"));
+var sign = prompt("Zadej plus nebo minus");
+
+if (sign == "+") {
+    console.log(firstNumer + secondNumer);
+} else if (sign == "-") {
+    console.log(firstNumer - secondNumer);
+} else {
+    console.log("Tuto mat operaci nezna");
+}
 ```
