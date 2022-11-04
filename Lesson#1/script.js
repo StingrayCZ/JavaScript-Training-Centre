@@ -1,16 +1,17 @@
-/*****************************
- * * Typeof
+/************************
+Pole v JavaScriptu
  */
 
-// zadani cisla a prevod stringu na cislo
-var firstNumer = Number(prompt("Zadej prvni cislo"));
-var secondNumer = Number(prompt("Zadej druhe cislo"));
-var sign = prompt("Zadej plus nebo minus");
+var name = "David";  // mohu ulozit jen jednu hodnotu
 
-if (sign == "+") {
-    console.log(firstNumer + secondNumer);
-} else if (sign == "-") {
-    console.log(firstNumer - secondNumer);
-} else {
-    console.log("Tuto mat operaci nezna");
-}
+var emplyes = ["David", "Jane", "Diana"];
+
+console.log(emplyes);   // vypise vse
+console.log(emplyes[0]);  // vypise prvni prvek
+console.log(emplyes[1]);
+console.log(emplyes[2]);
+
+var age = [30, 20, 40];
+
+var array = ["David", "Setek", 33, 1980, true];
+console.log(array[3]);
