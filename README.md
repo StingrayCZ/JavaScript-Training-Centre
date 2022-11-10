@@ -10,25 +10,25 @@
 ## Lesson 2 (18.10.2022)
 
 * skript psát pokud možno do samostatného souboru, tedy jazyky odděleně
-```html
+```javascript
 <script>
     console.log("Jsem satan");
 </script>
 ```
 
-```html
+```javascript
 // console.log("Jsem satan!!!");
 // console.log("Jarda");
 // console.log("Lada");
 ```
 
-```html
+```javascript
 // promenne
 var age = 20;
 console.log(age);
 ```
 
-```html
+```javascript
 // data types
 // number
 var age = 20;
@@ -48,7 +48,7 @@ console.log(secondName);
 // null - promenna neexistuje
 console.log(test);
 ```
-```html
+```javascript
 // viceradkovy koment
 /*********************
  * vhf
@@ -57,7 +57,7 @@ console.log(test);
  */
 ```
 
-```html
+```javascript
 // vicepromenych v jednom vypisu
 var firstName = "Jarda";
 var secondName = "Baca";
@@ -75,17 +75,17 @@ console.log("Tento clovek se jmenuje " + firstName + " " + secondName + " a je m
 * Ovládni JavaScript - Logické operátory v JavaScriptu a ještě jednou confirm
 * Ovládni JavaScript - Typeof v JavaScriptu a jak souvisí s datovými typy
 
-```html
+```javascript
 aler("Ahoj, ja jsem ten");
 alert("Ahoj, ja jsem ten");
 ```
 
-```html
+```javascript
 // tlacitko ANO/NE
 confirm("Jsi plnolety?");
 ```
 
-```html
+```javascript
 // prompt = výzva
 var age = prompt("Kolik je ti let")
 console.log("age + 5: " + age + 5);     // spojeni dvou stringu
@@ -99,7 +99,7 @@ var adult = age +++ 5;
 console.log(adult);
 ```
 
-```html
+```javascript
 /*
 * Zakladni operatory
  */
@@ -118,7 +118,7 @@ console.log(birthJana * 2 - 500);
 console.log(birthJana * (2 - 500));
 ```
 
-```html
+```javascript
 /*****************************
  * * Logicke opratory
  */
@@ -137,7 +137,7 @@ var resultConfirm = confirm("Jsi plnolety?");  // dotaz na ANO/NE
 console.log(resultConfirm)
 ```
 
-```html
+```javascript
 /*****************************
  * * Zjisteni datove typu
  */
@@ -157,7 +157,7 @@ console.log(typeof(true)); //boolean
 * Podmínky if a else v JavaScriptu </p>
 * Načtení hodnoty od uživatele a vyhodnocení pomocí podmínky v JavaScriptu </p>
 
-```html
+```javascript
 // increment
 var x = 1;
 x = x + 1;
@@ -174,7 +174,7 @@ x--;
 console.log(x);  // 2
 ```
 
-```html
+```javascript
 // True&False
 if (3 > 0){
     // podminka je true = pravda
@@ -185,7 +185,7 @@ if (3 > 0){
 }
 ```
 
-```html
+```javascript
 var ageDavid = 15;
 var ageJana = 20;
 
@@ -198,7 +198,7 @@ if (ageDavid > ageJana){
 }
 ```
 
-```html
+```javascript
 var age = prompt("Kolik je ti let?");
 
 if (age >= 18) {
@@ -215,7 +215,7 @@ else {
 * Převod datových typů a jednoduchá kalkulačka v JavaScriptu </p>
 * And a or v JavaScriptu </p>
 
-```html
+```javascript
 var ageDavid = 20;
 var ageJana = 220;
 
@@ -231,7 +231,7 @@ if (ageDavid > ageJana){
 }
 ```
 
-```html
+```javascript
 // zadani cisla a prevod stringu na cislo
 var firstNumer = Number(prompt("Zadej prvni cislo"));
 var secondNumer = Number(prompt("Zadej druhe cislo"));
@@ -246,7 +246,7 @@ if (sign == "+") {
 }
 ```
 
-```html
+```javascript
 && - a zaroven
 || - nebo
 ```
@@ -256,7 +256,7 @@ if (sign == "+") {
 * Doděláme naší kalkučka, aby nešlo dělit nulou v JavaScriptu
 * Ternární operátor v JavaScriptu
 
-```html
+```javascript
 // vylepsena kalkulacka
 var firstNumer = Number(prompt("Zadej prvni cislo"));
 var sign = prompt("Zadej plus nebo minus");
@@ -275,7 +275,7 @@ if (sign == "+") {
 }
 ```
 
-```html
+```javascript
 var firstNumer = Number(prompt("Zadej prvni cislo"));
 var sign = prompt("Zadej plus nebo minus");
 var secondNumer = Number(prompt("Zadej druhe cislo"));
@@ -295,7 +295,7 @@ if (sign == "+") {
 }
 ```
 
-```html
+```javascript
 // Ternární operátor v JavaScriptu
 
 var ageDavid = 9;
@@ -335,7 +335,7 @@ console.log(drink)
 * Složitější funkce v JavaScriptu
 * Function statements a function expressions v JavaScriptu
 
-```html
+```javascript
 // SWITCH
 var pet = "dog";
 var pet = "krysa";
@@ -355,7 +355,7 @@ switch (pet){
 }
 ```
 
-```html
+```javascript
 var ageDavid = 5;
 
 switch (ageDavid){
@@ -370,7 +370,7 @@ switch (ageDavid){
 }
 ```
 
-```html
+```javascript
 // alternativni zapis
 switch (true){
     case ageDavid == 20:
@@ -384,7 +384,7 @@ switch (true){
 }
 ```
 
-```html
+```javascript
 // function
 function calculateAge(birth){
     // console.log(2020 - birth);
@@ -396,7 +396,7 @@ calculateAge(1990);
 calculateAge(1980);
 ```
 
-```html
+```javascript
 // function + return
 function calculateAge(birth){
     // console.log(2020 - birth);
@@ -410,7 +410,7 @@ var testC = calculateAge(1980);
 console.log(testA, testB, testC)
 ```
 
-```html
+```javascript
 // Složitější funkce v JavaScriptu
 // Vypocitame vek
 function calculateAge(birth){
@@ -437,7 +437,7 @@ var testC = yearsUntilRetirement(1880, "Diana");
 var testD = yearsUntilRetirement(1988, "Jarda");
 ```
 
-```html
+```javascript
 // Function
 // function calculateAge(birth){
 //     return 2020 - birth;
@@ -451,7 +451,7 @@ var calculateAge = function(birth){
 console.log(calculateAge(2000));
 ```
 
-```html
+```javascript
 // Function statements a function expressions v JavaScriptu
 var myJob = function(job, firstName){
     switch(job){
@@ -475,7 +475,7 @@ console.log(myJob("worker", "Johan"));
 * Rozdíl mezi == a === v porovnání v JavaScriptu
 * Pole v JavaScriptu
 
-```html
+```javascript
 /*
 Falsy a truthy hodnota v JavaScriptu
 falsy = undefined, 0, "", NaN, null
@@ -524,7 +524,7 @@ if (job){
 }
 ```
 
-```html
+```javascript
 // 1 OR 0
 var salary = 0;
 
@@ -535,7 +535,7 @@ if(salary || salary === 0){          // false OR true, nula muze byt True
 }
 ```
 
-```html
+```javascript
 /*
 Rozdíl mezi == a === v porovnání v JavaScriptu
  */
