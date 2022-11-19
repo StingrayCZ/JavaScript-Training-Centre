@@ -51,6 +51,7 @@ const map1 = array1.map(x  => x * 2);
 
 * Heroku <a href="https://dashboard.heroku.com/">here</a>
 * Rosti.cz <a href="https://rosti.cz/"> here</a>
+* Rosti.cz - Automatizovaný deployment s dockerem napojený na github a travis(wokrshop) <a href="https://www.youtube.com/watch?v=JQng3Utewo0&list=PLVqtbc0z8jiFpAFP0jwlhlofA4iKfraux&index=2"> here</a>
 
 
 ## JobInterview
@@ -63,3 +64,61 @@ const map1 = array1.map(x  => x * 2);
 * Queue (FIFO)  => Fronta
 * Stack (LIFO) => Zásobník 
 * Asymptotická složitost
+
+
+## Array (Pole)
+
+```javascript
+var employees = ["David", "Jane", "Diana"];
+console.log(employees);
+
+/*
+    push - prida na konec
+    unshift - prida na zacatek
+
+    pop - odebere posledni
+    shift - odebere prvni
+ */
+employees.push("Jarda");
+employees.unshift("Adam");
+console.log(employees);
+
+employees.pop();
+employees.shift();
+console.log(employees);
+```
+
+## Metody - funkce v objektu jsou metody
+
+## While Cycle / DoWhile Cycle
+
+FOR => Zname presny pocet opakovani
+While => NEzname presny pocet opakovani
+<p>
+<img src="./Pics/DoWhileFlowchart.png" width="550" />
+</p>
+
+```javascript
+// FOR cycle
+console.log("FOR cycle");
+for(var i = 0; i < 0; i++){
+    console.log("jarda" + i);
+}
+
+// WHILE cycle
+console.log("\nWHILE cycle");
+i = 0;
+while (i < 0){                      // zastavi ihned
+    console.log("jarda" + i);
+    i++;
+}
+
+// DO WHILE cycle (provede se min 1 provedl)
+console.log("\nDO WHILE cycle");
+var i = 0;
+do {
+    console.log("jarda" + i);       // zastavi ihned
+    i++;
+}while (i < 0);
+```
+

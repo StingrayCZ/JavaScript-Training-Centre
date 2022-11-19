@@ -549,3 +549,214 @@ if (salary == 0){   // resi jen obsah
     console.log(false);
 }
 ```
+
+```javascript
+/************************
+Pole v JavaScriptu
+ */
+
+var name = "David";  // mohu ulozit jen jednu hodnotu
+
+var emplyes = ["David", "Jane", "Diana"];
+var emplyes = new Array("David", "Jane", "Diana"); // alter. zapis pole
+
+console.log(emplyes);   // vypise vse
+console.log(emplyes[0]);  // vypise prvni prvek
+console.log(emplyes[1]);
+console.log(emplyes[2]);
+
+var age = [30, 20, 40];
+
+var array = ["David", "Setek", 33, 1980, true];
+console.log(array[3]);
+```
+
+## Lesson 8 (11.11.2022)
+
+* Práce s polem v JavaScriptu
+* Pole a indexOf a length v JavaScriptu
+
+```javascript
+/************************
+Práce s polem v JavaScriptu
+ */
+
+var employees = ["David", "Jane", "Diana"];
+
+employees[0] = "Martin";
+employees[1] = "Anna";
+employees[5] = "Eduard";  // doplneni obsahu na pozici pet, 3 a 4 pozice zustane neobsazena
+
+console.log(employees);
+```
+
+```javascript
+/************************
+Práce s polem v JavaScriptu - pidavani a odebirani pozic
+ */
+
+var employees = ["David", "Jane", "Diana"];
+console.log(employees);
+
+/*
+    push - prida na konec
+    unshift - prida na zacatek
+
+    pop - odebere posledni
+    shift - odebere prvni
+ */
+employees.push("Jarda");
+employees.unshift("Adam");
+console.log(employees);
+
+employees.pop();
+employees.shift();
+console.log(employees);
+```
+
+```javascript
+/************************
+Pole a indexOf a length v JavaScriptu
+ */
+
+var employes = ["David", "Jane", "Diana", "Martin", "Eduard", "Martin"];
+
+console.log(employes.indexOf("David")); // vypise cislo pozice
+console.log(employes.indexOf("Diana"));
+console.log(employes.indexOf("Martin"));
+console.log(employes.indexOf("natalia")); // jmeno, ktere v poli neni, vypise -1
+console.log(employes.indexOf("Albert")); // jmeno, ktere v poli neni, vypise -1
+
+console.log(employes.length); // pocet pozic
+console.log(employes[employes.length - 4]);  // index[], delka - 4 = pozice
+```
+
+## Lesson 9 (17.11.2022)
+
+* Objekty v JavaScriptu
+* Metody u objektů
+
+```javascript
+/************************
+Objekty v JavaScriptu (Objects)
+ */
+// pole = hodnotam jsou prirazene objekty. Zalezi na poradi.
+var employes = ["David", "Jane", "Diana", "Martin", "Eduard", "Martin"];
+
+// *****************************************************************
+// objekt = hodnotam jsou prirazeny jine hodnoty. Nezalezi na poradi.
+
+// Object ONE
+var jarda= {
+    // klic: hodnota,
+    firstName: "Jarda",
+    lastName: "Baca",
+    birthYear: 1988,
+    driveLicence: true,
+    family: ["John", "Anna", "Diana"]
+}
+console.log(jarda);                 // vypise vse
+console.log(jarda.firstName);       // vypise firstName
+console.log(jarda.lastName);        // vypise lastName
+console.log(jarda.driveLicence);    // vypise driveLicence
+
+console.log(jarda["firstName"]);    // vypise firstName
+
+// Object TWO
+var proportion = {
+    gendre: "Male",
+    height: 178,
+    weight: 58,
+}
+
+console.log(proportion);            // vypise vse
+console.log(proportion.gendre);     // vypise gendre
+
+// Dalsi moznost jak zapsat objekt
+var lada = new Object();
+lada.firstName = "Lada";
+lada.lastName = "Raba";
+lada.birthYear = "1990";
+lada.driveLicence = true;
+lada.gendre = "female";
+
+console.log(lada);                  // vypise vse
+console.log(jarda.firstName);       // vypise firstName
+console.log(lada.lastName);         // vypise lastName
+console.log(lada.driveLicence);     // vypise driveLicence
+console.log(lada.gendre);           // vypise gendre
+```
+
+## Lesson 10 (17.11.2022)
+
+* Cykly: cyklus for (#33)
+* Cykly: procházení pole cyklem for (#34)
+* Cykly: příklady na cyklus for (#35)
+* Cykly: While cyklus
+
+```javascript
+/************************
+FOR cyklus
+ */
+
+for(var i = 0; i <= 10; i++){
+    console.log(i + " Cislo");
+}
+```
+
+```javascript
+/************************
+ Cykly: procházení pole cyklem for
+ */
+
+var employees = ["David", "Jane", "Diana", "Petr", "Johnny"];
+
+// klasicky zapis
+// console.log(employees[0]);
+// console.log(employees[1]);
+// console.log(employees[2]);
+
+for(var i = 0; i < employees.length; i++){  // delka pole
+    console.log(employees[i]);
+}
+```
+
+```javascript
+// WHILE cycle - NEzname presny pocet opakovani
+var i = 0
+while(i < 10){          // dokud plati podminka
+    console.log(i);
+    i++;
+}
+```
+## Lesson 11 (19.11.2022)
+
+* Cykly: Do while cyklus a porovnání všech cyklů
+
+```javascript
+// FOR cycle
+console.log("FOR cycle");
+for(var i = 0; i < 0; i++){
+    console.log("jarda" + i);
+}
+
+// WHILE cycle
+console.log("\nWHILE cycle");
+i = 0;
+while (i < 0){                      // zastavi ihned
+    console.log("jarda" + i);
+    i++;
+}
+
+// DO WHILE cycle (provede se min 1 provedl
+console.log("\nDO WHILE cycle");
+var i = 0;
+do {
+    console.log("jarda" + i);       // zastavi ihned
+    i++;
+}while (i < 0);
+```
+
+## Lesson 12 (20.11.2022)
+
+* Cykly: break a continue v cyklu (#38)
