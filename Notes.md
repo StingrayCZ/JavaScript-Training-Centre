@@ -1,5 +1,11 @@
 # Notes
 
+## Input (pop-up window)
+```javascript
+var traveler = prompt();
+console.log(traveler);
+```
+
 * Nan - Not-A-Number
 ```html
 function sanitise(x) {
@@ -122,3 +128,16 @@ do {
 }while (i < 0);
 ```
 
+## Break&Continue
+
+* break - zpusobi ukonceni cyklu
+* continue - zastavi pruchod cyklem, ale cyklus pokračuje dal (napr. zastavi prvni pruchod cyklem, ale pokracuje dal druhym opakovanim)
+
+```javascript
+    console.log(i);
+    if(wanted[i] === traveler){
+        console.log("Je hledan");
+        // break;                          // castavi cely FOR
+        continue;                    // zastavi jen iteraci
+    }
+```
