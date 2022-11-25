@@ -790,10 +790,30 @@ for(var i = 0; i < 3; i++){
 
 ## Lesson 13 (21.11.2022)
 
-* Co je to DOM v JavaScriptu (#39)
+* Co je to DOM (Document Object Model) v JavaScriptu (#39)
 * Query Selector a změna textu v HTML pomocí JavaScriptu (#40)
+* Query Selector All a výběr více stejných tagů v JavaScriptu
+* Výběr a změna CSS pomocí query selectoru v JavaScriptu
 
 ```javascript
+// DOM
 var text = document.querySelector("p").textContent;
 console.log(text);
+```
+```javascript
+// QueryALL
+// Reseni> pomoci class, id
+// zobrazi pouze prvni
+var text;
+text =
+document.querySelector("p");
+console.log(text);
+
+// zobrazi vsechny, jako pole
+text =
+document.querySelectorAll("p");
+// for(var i = 0; i <= 2; i++){
+for(var i = 0; i < text.length; i++){
+    console.log(text[i].textContent);
+}
 ```
