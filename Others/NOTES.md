@@ -1,5 +1,5 @@
 # JavaScript
 
-## Jak7 je to jazyk?
+## Jaky je to jazyk?
 * Na straně klienta </p>
 * client side

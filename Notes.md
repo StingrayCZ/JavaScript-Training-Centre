@@ -58,7 +58,10 @@ const map1 = array1.map(x  => x * 2);
 * Heroku <a href="https://dashboard.heroku.com/">here</a>
 * Rosti.cz <a href="https://rosti.cz/"> here</a>
 * Rosti.cz - Automatizovaný deployment s dockerem napojený na github a travis(wokrshop) <a href="https://www.youtube.com/watch?v=JQng3Utewo0&list=PLVqtbc0z8jiFpAFP0jwlhlofA4iKfraux&index=2"> here</a>
-
+* Checkio <a href="https://checkio.org/"> here</a>
+* LeetCode <a href="https://leetcode.com/"> here</a>
+* CodeWars <a href="https://leetcode.com/"> here</a>
+* Kniha PY <a href="http://diveintopython3.py.cz/index.html"> here</a>
 
 ## JobInterview
 
@@ -70,7 +73,6 @@ const map1 = array1.map(x  => x * 2);
 * Queue (FIFO)  => Fronta
 * Stack (LIFO) => Zásobník 
 * Asymptotická složitost
-
 
 ## Array (Pole)
 
